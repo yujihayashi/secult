@@ -1,0 +1,199 @@
+/*
+FUNÇÕES PADRÕES START
+*********************************************************************/
+.clear,
+.first {
+  clear: both;
+}
+/*********************************************************************
+FUNÇÕES PADRÕES END
+*/
+/*
+NON-RESPONSIVE START
+**********************************************************************************************/
+/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
+.container {
+  max-width: none !important;
+  width: 960px;
+}
+.navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*/
+/* Reset the container */
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+.navbar-brand {
+  margin-left: -15px;
+}
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+/**********************************************************************************************
+NON-RESPONSIVE END
+*/
+::selection {
+  background-color: #812d2a;
+  color: #FFF;
+}
+::-moz-selection {
+  background-color: #812d2a;
+  color: #FFF;
+}
+small {
+  display: inline-block;
+  line-height: 1.1;
+}
+textarea {
+  resize: vertical;
+}
+a,
+button {
+  transition: all 0.25s ease 0s;
+}
+/*
+FONTS START
+**********************************************************************************************/
+.box-chamada {
+  font-family: 'robotoblack', Arial, sans-serif;
+  font-weight: normal;
+}
+/**********************************************************************************************
+FONTS END
+*/
+/*
+ESTRUTURA START
+**********************************************************************************************/
+/**********************************************************************************************
+ESTRUTURA END
+*/
+/*
+CLASSES START
+**********************************************************************************************/
+[class^='lista-'],
+[class^='lista-'],
+[class^='menu-'],
+[class^='menu-'] ul,
+.cycle-slideshow {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.btn-gray {
+  background: #EEE;
+  color: #C93F2A;
+}
+.btn-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.imagem {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+.imagem-rounded {
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+.inline-block {
+  display: inline-block;
+}
+[class^='ycon-'],
+[class*='ycon-'] {
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url(../imagem/site/ycon.png);
+}
+.space {
+  width: 1%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.relative {
+  position: relative;
+}
+/**********************************************************************************************
+CLASSES END
+*/
+/*
+JQUERY UI START
+**********************************************************************************************/
+/**********************************************************************************************
+JQUERY UI END
+*/
+@media (max-width: 767px) {
+  /*    .site-geral:before {content:"TABLET";}*/
+}
+@media (max-width: 480px) {
+  /*#GERAL:before {content:"MOBILE";}*/
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+}
