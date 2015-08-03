@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Secult</title>
+	<title>Secult - Secretaria de Estado de Cultura do Pará</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=960, user-scalable=yes">
+	<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="shortcut icon" href="/imagem/favicon.png" type="image/png" />
 	<meta name="author" content="Libra Design" />
 	<meta name="keywords" content="" />
@@ -36,39 +36,50 @@
 				<div class="site-header">
 					<div class="container">
 						<nav class="navbar navbar-default" role="navigation">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Title</a>
-							</div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-								<form class="navbar-form navbar-left" role="search">
+							<div class="line-1 clearfix">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">Navegação</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/secult.jpg" alt="Logo Secult PA"></a>
+									<a class="navbar-brand" href="http://www.pa.gov.br" title="Voltar para a página inicial" target="_blank"><img src="/imagem/site/governo-do-para.jpg" alt="Logo Governo do Pará"></a>
+								</div>
+								<form class="navbar-form navbar-right" role="search">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
+										<input type="text" class="form-control" placeholder="Busque notícias, editais, etc...">
 									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
+									<button type="submit" class="btn btn-link"><i class="ycon-mag"></i><span class="sr-only">Pesquisar</span></button>
 								</form>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
+								<ul class="nav navbar-nav navbar-right navbar-secondary">
+									<li><a href="#"><i class="ycon-document"></i> Editais</a></li>
+									<li><a href="#"><i class="ycon-cart"></i> Produtos</a></li>
+									<li><a href="#"><i class="ycon-license"></i> Licitações</a></li>
 								</ul>
-							</div><!-- /.navbar-collapse -->
+							</div> <!-- .line-1 -->
+							<div class="line-2 clearfix">
+								<div class="site-name">
+									<div class="name-1">Governo do Estado do Pará</div>
+									<div class="name-2">Secretaria  da Cultura</div>
+								</div> <!-- .site-name -->
+								<div class="navbar navbar-inverse">
+									<div class="collapse navbar-collapse navbar-ex1-collapse">
+										<ul class="nav navbar-nav navbar-primary">
+											<li class="active"><a href="/">Home</a></li>
+											<li><a href="#">A Secult</a></li>
+											<li><a href="#">Notícias</a></li>
+											<li><a href="#">Espaços Secult</a></li>
+											<li><a href="#">Projetos</a></li>
+											<li><a href="#">Contato</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li class="agenda-cultural"><a href="#"><i class="ycon-calendar icone"></i> <span class="text">Agenda Cultural</span></a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</div> <!-- .navbar-inverse -->
+							</div> <!-- .line-2 -->
 						</nav>
 					</div> <!-- .container -->
 				</div> <!-- .site-header -->
@@ -76,32 +87,366 @@
 			<div class="extra-central">
 				<div class="site-central" id="content">
 					<div class="container">
-						<div class="box-banner">
-							<div class="cycle-btn">
-								<div class="container">
-									<a href="javascript:void(0);" class="cycle-prev"><span class="icone-nav-left"></span><span class="sr-only">Banner anterior</span></a>
-									<a href="javascript:void(0);" class="cycle-next"><span class="icone-nav-right"></span><span class="sr-only">Próximo banner</span></a>
+						<div class="row">
+							<div class="col-md-8 col-sm-8">
+								<div class="box box-banner">
+									<div class="box-header">
+										<h2 class="box-title">
+											Destaques
+										</h2>
+									</div> <!-- .box-header -->
+									<div class="box-content">
+										<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true" data-cycle-pager-template="<span></span>">
+											<li>
+												<div class="content">
+													<div class="imagem"><img src="/imagem/site/banner-01.jpg" alt=""></div>
+													<div class="text">
+														<a href="#" class="categoria">Espaços Secult</a>
+														<a href="#" class="title">Theatro da Paz comemora aniversário com super programação cultural</a>
+													</div> <!-- .imagem -->
+												</div> <!-- .content --> 
+											</li>
+											<li>
+												<div class="content">
+													<div class="imagem"><img src="/imagem/site/banner-01.jpg" alt=""></div>
+													<div class="text">
+														<a href="#" class="categoria">Espaços Secult</a>
+														<a href="#" class="title">Theatro da Paz comemora aniversário com super programação cultural</a>
+													</div> <!-- .imagem -->
+												</div> <!-- .content --> 
+											</li>
+											<li>
+												<div class="content">
+													<div class="imagem"><img src="/imagem/site/banner-01.jpg" alt=""></div>
+													<div class="text">
+														<a href="#" class="categoria">Espaços Secult</a>
+														<a href="#" class="title">Theatro da Paz comemora aniversário com super programação cultural</a>
+													</div> <!-- .imagem -->
+												</div> <!-- .content --> 
+											</li>
+											<li>
+												<div class="content">
+													<div class="imagem"><img src="/imagem/site/banner-01.jpg" alt=""></div>
+													<div class="text">
+														<a href="#" class="categoria">Espaços Secult</a>
+														<a href="#" class="title">Theatro da Paz comemora aniversário com super programação cultural</a>
+													</div> <!-- .imagem -->
+												</div> <!-- .content --> 
+											</li>
+										</ul>
+										<div class="cycle-nav"></div> <!-- .cycle-nav -->
+									</div> <!-- .box-content -->
+								</div> <!-- .box-banner -->
+								<div class="box box-noticias">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-md-6 col-sm-6 noticia">
+												<div class="content">
+													<div class="row">
+														<div class="col-md-8 col-sm-8">
+															<a href="#" class="categoria">Feira do Livro</a>
+														</div> <!-- .col-md-8 -->
+														<div class="col-md-4 col-sm-4">
+															<span class="date">12.Nov.15</span>
+														</div> <!-- .col-md-4 -->
+													</div> <!-- . row -->
+													<a href="/noticia/" class="title">Fotografia, jornalismo e literatura são destaques na programação</a>
+												</div> <!-- .content -->
+											</div> <!-- .col-md-6 col-sm-6 -->
+											<div class="col-md-6 col-sm-6 noticia">
+												<div class="content">
+													<div class="row">
+														<div class="col-md-8 col-sm-8">
+															<a href="#" class="categoria">Feira do Livro</a>
+														</div> <!-- .col-md-8 -->
+														<div class="col-md-4 col-sm-4">
+															<span class="date">12.Nov.15</span>
+														</div> <!-- .col-md-4 -->
+													</div> <!-- . row -->
+													<a href="/noticia/" class="title">Experiência paraense ganha reconhecimento da ONU</a>
+												</div>
+											</div> <!-- .content --> <!-- .col-md-6 col-sm-6 -->
+										</div> <!-- .row -->
+									</div> <!-- .box-content -->
+								</div> <!-- .box-noticias -->
+							</div> <!-- .col-md-8 -->
+							<div class="col-md-4 col-sm-4">
+								<div class="box box-agenda">
+									<div class="box-header">
+										<h2 class="box-title">Agenda Cultural</h2>
+									</div> <!-- .box-header -->
+									<div class="box-content">
+										<ul class="lista-agenda">
+											<li class="agenda">
+												<div class="media">
+													<span class="pull-left">
+														<span class="date">
+															<span class="day">12</span>
+															<span class="month">Ago.15</span>
+														</span>
+													</span>
+													<div class="media-body">
+														<a href="/evento/" class="title">VII FESTIVAL INTERNACIONAL DE ÓPERA DA AMAZÔNIA</a>
+													</div>
+												</div>
+											</li>
+											<li class="agenda">
+												<div class="media">
+													<span class="pull-left">
+														<span class="date">
+															<span class="day">12</span>
+															<span class="month">Ago.15</span>
+														</span>
+													</span>
+													<div class="media-body">
+														<a href="/evento/" class="title">VII FESTIVAL INTERNACIONAL DE ÓPERA DA AMAZÔNIA</a>
+													</div>
+												</div>
+											</li>
+											<li class="agenda">
+												<div class="media">
+													<span class="pull-left">
+														<span class="date">
+															<span class="day">12</span>
+															<span class="month">Ago.15</span>
+														</span>
+													</span>
+													<div class="media-body">
+														<a href="/evento/" class="title">VII FESTIVAL INTERNACIONAL DE ÓPERA DA AMAZÔNIA</a>
+													</div>
+												</div>
+											</li>
+											<li class="agenda">
+												<div class="media">
+													<span class="pull-left">
+														<span class="date">
+															<span class="day">12</span>
+															<span class="month">Ago.15</span>
+														</span>
+													</span>
+													<div class="media-body">
+														<a href="/evento/" class="title">VII FESTIVAL INTERNACIONAL DE ÓPERA DA AMAZÔNIA</a>
+													</div>
+												</div>
+											</li>
+											<li class="agenda">
+												<div class="media">
+													<span class="pull-left">
+														<span class="date">
+															<span class="day">12</span>
+															<span class="month">Ago.15</span>
+														</span>
+													</span>
+													<div class="media-body">
+														<a href="/evento/" class="title">VII FESTIVAL INTERNACIONAL DE ÓPERA DA AMAZÔNIA</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="/agenda/" class="btn btn-warning btn-block plus">Veja a agenda completa</a>
+									</div> <!-- .box-content -->
+								</div> <!--. box-agenda -->
+							</div> <!-- .col-md-4 -->
+						</div> <!-- .row -->
+						<div class="box box-espacos">
+							<div class="box-header">
+								<h2 class="box-title">Espaços Secult</h2>
+							</div> <!-- .box-header -->
+							<div class="box-content">
+								<div class="cycle-espacos">
+									<div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".cycle-espacos .cycle-nav" data-cycle-next=".cycle-espacos .cycle-next" data-cycle-prev=".cycle-espacos .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
+										<li>
+											<div class="content">
+												<div class="imagem" style="background-image:url(/imagem/site/espaco-01.jpg);"><img src="/imagem/site/pixel.gif" clas="pixel" alt=""></div>
+												<div class="text">
+													<div class="categoria">Sistema integrado de Museus e Memoriais</div>
+													<a href="#" class="title">Casa das 11 janelas e forte do presépio</a>
+													<div class="opcoes">
+														<a href="#" class="botao" title="Veja mais informações"><i class="ycon-info"></i><span class="sr-only">Informações</span></a>
+														<a href="#" class="botao" title="Veja as fotos do local"><i class="ycon-photo"></i><span class="sr-only">Fotos</span></a>
+														<a href="#" class="botao" title="Faça um tour 360º"><i class="ycon-360"></i><span class="sr-only">Tour 360º</span></a>
+													</div>
+												</div> <!-- .text -->
+											</div> <!-- .content -->
+										</li>
+										<li>
+											<div class="content">
+												<div class="imagem" style="background-image:url(/imagem/site/espaco-01.jpg);"><img src="/imagem/site/pixel.gif" clas="pixel" alt=""></div>
+												<div class="text">
+													<div class="categoria">Sistema Integrado de Teatros</div>
+													<a href="#" class="title">Theatro da Paz</a>
+													<div class="opcoes">
+														<a href="#" class="botao" title="Veja mais informações"><i class="ycon-info"></i><span class="sr-only">Informações</span></a>
+														<a href="#" class="botao" title="Veja as fotos do local"><i class="ycon-photo"></i><span class="sr-only">Fotos</span></a>
+														<a href="#" class="botao" title="Faça um tour 360º"><i class="ycon-360"></i><span class="sr-only">Tour 360º</span></a>
+													</div>
+												</div> <!-- .text -->
+											</div> <!-- .content -->
+										</li>
+									</div> <!-- .cycle-slideshow -->
+									<a href="javascript:void(0);" class="cycle-prev"><i class="ycon-cycle-prev"></i></a>
+									<a href="javascript:void(0);" class="cycle-next"><i class="ycon-cycle-next"></i></a>
+								</div> <!-- .cycle-espacos -->
+								<a href="#" class="btn btn-primary plus">Todos os espaços</a>
+							</div> <!-- .box-content -->
+						</div> <!-- .box-espacos -->
+						<div class="row">
+							<div class="col-md-8 col-sm-8">
+								<div class="box box-projetos">
+									<div class="box-header">
+										<h2 class="box-title">Projetos</h2>
+									</div> <!-- .box-header -->
+									<div class="box-content">
+										<ul class="lista-projetos row">
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+											<li class="col-md-6 col-sm-6">
+												<div class="content">
+													<h3 class="title"><a href="#" title="Conheça mais sobre o projeto">Feira Panamazônia do Livro</a></h3>
+													<div class="text">Lorem ipsum dolor sit amet, consectetur elit.</div>
+												</div> <!-- .content -->
+											</li>
+										</ul>
+										<a href="#" class="btn btn-primary plus" title="Veja todos os projetos">Mais projetos</a>
+									</div> <!-- .box-content -->
+								</div> <!-- .box.box-projetos -->
+							</div> <!-- .col-md-8 -->
+							<div class="col-md-4 col-sm-4">
+								<div class="box box-fanpage">
+									<div class="box-content">
+										<div class="fb-page" data-href="https://www.facebook.com/secultPARA" data-width="300" data-height="316" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/secultPARA"><a href="https://www.facebook.com/secultPARA">Secult - Secretaria de Estado de Cultura do Pará</a></blockquote></div></div>
 
-									<div class="cycle-nav"></div> <!-- .cycle-nav -->
-								</div> <!-- .container -->
-							</div> <!-- .cycle-btn -->
-							<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
-								<li>
-									banner 01
-								</li>
-								<li>
-									banner 01
-								</li>
-							</ul>
-						</div> <!-- .box-banner -->
+									</div> <!-- .box-content -->
+								</div> <!-- .box.box-fanpage -->
+							</div> <!-- .col-md-8 -->
+						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
 			<footer>
 				<div class="extra-footer">
+					<div class="site-atendimento">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-3">
+									<h2 class="media-heading">Canais de Atendimento</h2>
+									<p>
+										Comunique-se conosco por meio de nossos canais.
+									</p>
+									<hr class="dotted-white">
+									<ul class="social-footer">
+										<li><a href="#" target="_blank" title="Acesse nosso Facebook"><span class="sr-only">Facebook</span><i class="ycon-facebook-white"></i></a></li>
+										<li><a href="#" target="_blank" title="Acesse nosso Instagram"><span class="sr-only">Instagram</span><i class="ycon-instagram-white"></i></a></li>
+										<li><a href="#" target="_blank" title="Acesse nosso Twitter"><span class="sr-only">Twitter</span><i class="ycon-twitter-white"></i></a></li>
+										<li><a href="#" target="_blank" title="Acesse nosso Youtube"><span class="sr-only">Youtube</span><i class="ycon-youtube-white"></i></a></li>
+									</ul>
+								</div> <!-- .col-md-3 -->
+								<div class="col-md-5 col-md-offset-1">
+									<ul class="media-list media-atendimento">
+										<li class="media">
+											<span class="pull-left"><i class="ycon-phone-white"></i></span>
+											<div class="media-body">
+												<span class="lead">91. 4009 8712</span>
+											</div>
+										</li>
+										<li class="media">
+											<span class="pull-left"><i class="ycon-marker-white"></i></span>
+											<div class="media-body">
+												Av. Magalhães Barata, 830 - São Brás - Belém/PA
+											</div>
+										</li>
+										<li class="media">
+											<span class="pull-left"><i class="ycon-mail-white"></i></span>
+											<div class="media-body">
+												<a href="mailto:atendimento@secult.pa.gov.br">atendimento@secult.pa.gov.br</a>
+											</div>
+										</li>
+									</ul>
+								</div> <!-- .col-md-5 -->
+								<div class="col-md-3 text-center">
+									<a href="/contato/" class="balao" title="Acesse nossa área de atendimento">
+										<i class="ycon-balao point"></i>
+										<i class="ycon-mail-white-lg"></i>
+									</a>
+									<a href="/contato/" class="atendimento-footer" title="Acesse nossa área de atendimento">
+										<span class="line-1">Envie sua</span>
+										<span class="line-2">Mensagem</span>
+									</a>
+								</div> <!-- .col-md-3 -->
+							</div> <!-- .row -->
+						</div> <!-- .container -->
+					</div> <!-- .site-atendimento -->
+					<div class="site-map">
+						<div class="container">
+							<ul class="map-footer">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">A Secult</a></li>
+								<li><a href="#">Projetos</a></li>
+								<li><a href="#">Espaços Secult</a></li>
+								<li><a href="#">Agenda Cultural</a></li>
+								<li><a href="#">Notícias</a></li>
+								<li><a href="#">Contato</a></li>
+							</ul>
+						</div>
+					</div>
 					<div class="site-footer">
 						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+							<ul class="menu-footer">
+								<li>
+									<span class="footer-header">Sistema Integrado de Museus e Memoriais - SIM</span>
+									<ul>
+										<li><a href="#">Museu de Artes Sacra</a></li>
+										<li><a href="#">Polo São José Liberto</a></li>
+										<li><a href="#">Casa das 11 Janelas e Forte do Presépio</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="footer-header">Sistema Integrado de Teatros - SIT</span>
+									<ul>
+										<li><a href="#">Teatro Gasômetro e Parque da Residência</a></li>
+										<li><a href="#">Theatro da Paz</a></li>
+									</ul>
+								</li>
+							</ul>
+							<hr>
+							<div class="row">
+								<div class="col-md-6 direitos-left">
+									<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/secult.jpg" alt="Logo Secult PA"></a>
+									<a class="navbar-brand" href="http://www.pa.gov.br" title="Voltar para a página inicial" target="_blank"><img src="/imagem/site/governo-do-para.jpg" alt="Logo Governo do Pará"></a>
+								</div> <!-- .col-md-6 -->
+								<div class="col-md-6 direitos-right">
+									<span class="text-muted">Copyright © 2015.</span> <a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+								</div> <!-- .col-md-6 -->
+							</div> <!-- .row -->
+
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
 				</div> <!-- .extra-footer -->
@@ -109,8 +454,21 @@
 		</div> <!-- .site-geral -->
 	</div> <!-- .extra-geral -->
 	<script src="http://localhost:35729/livereload.js"></script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=148232925245589";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<script>
 	jQuery(document).ready(function(){
+		var bannerAlvo = $('.box-banner'),
+		bannerQtd = bannerAlvo.find('.cycle-nav').children().length,
+		bannerLargura = 100 / bannerQtd;
+		// console.log(bannerLargura);
+		bannerAlvo.find('.cycle-nav > span').css({width: bannerLargura + '%'});
 
 	});
 	</script>

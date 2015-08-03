@@ -8,98 +8,12 @@ FUNÇÕES PADRÕES START
 /*********************************************************************
 FUNÇÕES PADRÕES END
 */
-/*
-NON-RESPONSIVE START
-**********************************************************************************************/
-/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
-.container {
-  max-width: none !important;
-  width: 960px;
-}
-.navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
-/* Finesse the page header spacing */
-.page-header {
-  margin-bottom: 30px;
-}
-.page-header .lead {
-  margin-bottom: 10px;
-}
-/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*/
-/* Reset the container */
-/* Always float the navbar header */
-.navbar-header {
-  float: left;
-}
-/* Undo the collapsing navbar */
-.navbar-collapse {
-  display: block !important;
-  height: auto !important;
-  padding-bottom: 0;
-  overflow: visible !important;
-}
-.navbar-toggle {
-  display: none;
-}
-.navbar-collapse {
-  border-top: 0;
-}
-.navbar-brand {
-  margin-left: -15px;
-}
-/* Always apply the floated nav */
-.navbar-nav {
-  float: left;
-  margin: 0;
-}
-.navbar-nav > li {
-  float: left;
-}
-/* Redeclare since we override the float above */
-.navbar-nav.navbar-right {
-  float: right;
-}
-/* Undo custom dropdowns */
-.navbar .navbar-nav .open .dropdown-menu {
-  position: absolute;
-  float: left;
-  background-color: #fff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-width: 0 1px 1px;
-  border-radius: 0 0 4px 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #333;
-}
-.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #fff !important;
-  background-color: #428bca !important;
-}
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-  color: #999 !important;
-  background-color: transparent !important;
-}
-/**********************************************************************************************
-NON-RESPONSIVE END
-*/
 ::selection {
-  background-color: #812d2a;
+  background-color: #597fe0;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #597fe0;
   color: #FFF;
 }
 small {
@@ -113,11 +27,37 @@ a,
 button {
   transition: all 0.25s ease 0s;
 }
+hr {
+  height: 4px;
+  border: 0;
+  background: #d4d4d4;
+}
+hr.dotted-white {
+  background: url(/imagem/site/dotted-white.png) repeat-x left center;
+  height: 1px;
+  border: 0;
+}
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
+.map-footer,
+.btn,
+.line-2 .navbar-nav {
+  font-family: 'roboto_condensedbold', Arial, sans-serif;
+  font-weight: normal;
+}
+.lista-agenda .date,
+.title,
+.site-name {
+  font-family: 'robotobold', Arial, sans-serif;
+  font-weight: normal;
+}
+.atendimento-footer .line-2 {
   font-family: 'robotoblack', Arial, sans-serif;
+  font-weight: normal;
+}
+.menu-footer ul {
+  font-family: 'robotoregular', Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -126,6 +66,211 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.navbar-brand {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.extra-header .site-header .navbar-form .form-control {
+  background: none;
+  color: #597fe0;
+  min-width: 220px;
+}
+.extra-header .site-header .navbar-form .form-control::-moz-placeholder {
+  color: #597fe0;
+}
+.extra-header .site-header .navbar-form .form-control:-ms-input-placeholder {
+  color: #597fe0;
+}
+.extra-header .site-header .navbar-form .form-control::-webkit-input-placeholder {
+  color: #597fe0;
+}
+.extra-header .site-header .navbar-secondary {
+  font-size: 15px;
+  padding-right: 30px;
+}
+.extra-header .site-header .line-2 {
+  height: 180px;
+  background: url(../imagem/site/bg-site-header.jpg) no-repeat center top;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+.extra-header .site-header .line-2 .navbar-nav {
+  font-size: 18px;
+}
+.extra-header .site-header .line-2 .navbar-nav > li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.extra-header .site-header .line-2 .navbar-nav > li a {
+  color: #FFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+}
+.extra-header .site-header .line-2 .navbar-nav > li.active a {
+  border-bottom: 5px solid #597fe0;
+  background: none;
+}
+.extra-header .site-header .agenda-cultural a {
+  background: #000;
+  border-bottom: 5px solid #e37945;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.extra-header .site-header .agenda-cultural a .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.extra-header .site-header .site-name {
+  height: 121px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+  padding: 40px 32px;
+  line-height: 1.2;
+}
+.extra-header .site-header .site-name .name-1 {
+  font-size: 20px;
+}
+.extra-header .site-header .site-name .name-2 {
+  font-size: 36px;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.extra-footer .site-atendimento {
+  background: #3b3a38;
+  padding: 24px 0;
+}
+.extra-footer .site-atendimento,
+.extra-footer .site-atendimento a {
+  color: #FFF;
+}
+.extra-footer .site-atendimento .media-heading {
+  font-size: 32px;
+  line-height: 1;
+}
+.extra-footer .site-atendimento .balao {
+  margin-top: 10px;
+}
+.media-atendimento {
+  margin: 26px 0;
+}
+.media-atendimento .pull-left {
+  min-width: 32px;
+}
+.media-atendimento .media + .media {
+  margin-top: 26px;
+}
+.balao {
+  display: inline-block;
+  background: #597fe0;
+  padding: 18px 24px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 0 14px;
+}
+.balao .point {
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  margin-left: -4px;
+}
+.atendimento-footer {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+}
+.atendimento-footer:hover {
+  text-decoration: none;
+}
+.atendimento-footer .line-1,
+.atendimento-footer .line-2 {
+  display: block;
+}
+.atendimento-footer .line-2 {
+  color: #597fe0;
+}
+.social-footer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+.social-footer > li {
+  display: inline-block;
+}
+.social-footer > li + li {
+  margin-left: 30px;
+}
+.site-map {
+  background: #f0efff;
+}
+.map-footer {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.map-footer > li {
+  display: inline-block;
+}
+.map-footer > li a {
+  display: block;
+  padding: 26px 22px;
+  color: #555555;
+}
+.site-footer .navbar-brand {
+  float: none;
+  display: inline-block;
+}
+.site-footer .direitos-right {
+  text-align: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-header {
+  color: #888888;
+  font-size: 18px;
+  display: block;
+  margin: 0 0 15px;
+  line-height: 1;
+}
+.menu-footer {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0px !important;
+}
+.menu-footer * {
+  vertical-align: top;
+}
+.menu-footer > li {
+  text-align: left;
+  display: inline-block;
+  max-width: 250px;
+}
+.menu-footer > li + li {
+  margin-left: 80px;
+}
+.menu-footer ul > li {
+  line-height: 1.2;
+}
+.menu-footer ul > li + li {
+  margin-top: 15px;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +295,271 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.btn {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.btn-warning {
+  border-bottom: 4px solid #e59973;
+}
+.btn-primary {
+  border-bottom: 4px solid #527adf;
+}
+.box .box-header {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.box-banner .content {
+  position: relative;
+}
+.box-banner .box-content,
+.box-banner .cycle-slideshow,
+.box-banner .cycle-slideshow li,
+.box-banner .content,
+.box-banner .imagem {
+  height: 360px;
+  width: 100%;
+}
+.box-banner .box-content {
+  overflow: hidden;
+  position: relative;
+}
+.box-banner .cycle-slideshow {
+  position: relative;
+  z-index: 1;
+}
+.box-banner .imagem {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.box-banner .imagem img {
+  width: 100%;
+}
+.box-banner .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  padding: 8px 18px 18px;
+  line-height: 1;
+  height: 88px;
+}
+.box-banner .categoria,
+.box-banner .title {
+  color: #FFF;
+  display: block;
+}
+.box-banner .title {
+  font-size: 22px;
+}
+.box-banner .text,
+.box-banner .cycle-nav span.cycle-pager-active {
+  background: rgba(44, 28, 12, 0.85);
+}
+.box-banner .cycle-nav {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 88px;
+}
+.box-banner .cycle-nav span {
+  text-indent: -1000px;
+  text-align: left;
+  background: #597fe0;
+  height: 10px;
+  display: block;
+  float: left;
+  position: relative;
+}
+.box-banner .cycle-nav span:before {
+  content: " ";
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: -10px;
+  background: url(../imagem/site/icon/banner-point.png) no-repeat left top;
+  height: 10px;
+  width: 19px;
+}
+.box-banner .cycle-nav span.cycle-pager-active:before {
+  display: block;
+}
+.box-banner .cycle-nav span + span {
+  border-left: 1px solid rgba(44, 28, 12, 0.85);
+}
+.box-noticias {
+  border-bottom: 1px solid #ececec;
+  margin: 0 0 30px;
+}
+.box-noticias .title {
+  font-size: 18px;
+  line-height: 1;
+}
+.box-noticias .content {
+  padding: 15px 5px;
+  height: 110px;
+}
+.box-noticias .noticia + .noticia {
+  border-left: 1px solid #ececec;
+}
+.box-agenda .box-content {
+  margin-left: -20px;
+}
+.box-agenda .plus {
+  height: 51px;
+  padding: 12px 15px;
+}
+.box-agenda .lista-agenda .agenda {
+  height: 84px;
+}
+.box-espacos {
+  margin: 0 0 50px;
+}
+.box-espacos .box-header {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.box-espacos .box-header:after {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #ddd;
+  margin: 0 auto;
+  content: " ";
+}
+.box-espacos .box-content {
+  text-align: center;
+}
+.box-espacos .plus {
+  margin: 15px auto;
+}
+.box-projetos {
+  margin: 0 0 50px;
+}
+.box-projetos .box-header {
+  position: relative;
+  padding: 0 0 2px;
+  margin: 0 0 20px;
+}
+.box-projetos .box-header:before,
+.box-projetos .box-header:after {
+  height: 4px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: " ";
+}
+.box-projetos .box-header:before {
+  background: #cfd9f1;
+  z-index: 1;
+  width: 70px;
+}
+.box-projetos .box-header:after {
+  background: #acbfef;
+  z-index: 2;
+  width: 50px;
+}
+.box-fanpage {
+  margin: 0 0 50px;
+}
+.categoria {
+  font-size: 13px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  color: #848484;
+}
+.cycle-slideshow li * {
+  white-space: normal;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+}
+.cycle-espacos {
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+}
+.cycle-espacos .cycle-slideshow {
+  position: relative;
+  z-index: 1;
+}
+.cycle-espacos .cycle-slideshow li {
+  width: 300px;
+}
+.cycle-espacos .content {
+  padding: 0 5px;
+}
+.cycle-espacos .imagem {
+  padding-top: 66%;
+  width: 100%;
+  background: no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+.cycle-espacos .imagem img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.cycle-espacos .text {
+  background: #f7f7f7;
+  width: 100%;
+  height: 130px;
+  padding: 10px 10px 0;
+}
+.cycle-espacos .categoria {
+  text-transform: none;
+  font-size: 12px;
+}
+.cycle-espacos .title {
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  height: 42px;
+  overflow: hidden;
+  display: block;
+}
+.cycle-espacos .opcoes {
+  padding: 5px 0;
+}
+.cycle-espacos .opcoes a {
+  display: inline-block;
+  padding: 5px 15px;
+}
+.cycle-espacos .opcoes a + a {
+  background: url(../imagem/site/dotted-v.png) repeat-y left top;
+}
+.cycle-espacos .cycle-prev,
+.cycle-espacos .cycle-next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-top: -25px;
+}
+.cycle-espacos .cycle-prev {
+  left: 15px;
+}
+.cycle-espacos .cycle-next {
+  right: 15px;
+}
+.date {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #848484;
+}
+.form-control {
+  box-shadow: none;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -170,6 +580,84 @@ CLASSES START
   display: inline-block;
   background-image: url(../imagem/site/ycon.png);
 }
+.lista-agenda > li {
+  background: #f7f7f7;
+}
+.lista-agenda > li + li {
+  border-top: 1px solid #e5e5e5;
+}
+.lista-agenda a {
+  color: #e37945;
+}
+.lista-agenda .title {
+  font-size: 15px;
+}
+.lista-agenda .date {
+  color: #b9b9b9;
+  line-height: .9;
+  font-size: 12px;
+  text-align: center;
+}
+.lista-agenda .date .day,
+.lista-agenda .date .month {
+  display: block;
+}
+.lista-agenda .date .day {
+  font-size: 40px;
+  color: #999;
+}
+.lista-agenda .agenda {
+  padding: 14px 0;
+}
+.lista-agenda .media > .pull-left {
+  width: 26%;
+}
+.lista-agenda .media > .media-body {
+  width: 74%;
+  padding-right: 15px;
+}
+.lista-projetos > li {
+  padding-bottom: 14px;
+  margin-bottom: 6px;
+}
+.lista-projetos .content {
+  position: relative;
+  min-height: 66px;
+}
+.lista-projetos .content:before,
+.lista-projetos .content:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+}
+.lista-projetos .content:before {
+  z-index: 1;
+  background: #acbfef;
+  width: 100%;
+}
+.lista-projetos .content:after {
+  z-index: 2;
+  background: #597fe0;
+  width: 70%;
+}
+.lista-projetos .title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 0 4px;
+  line-height: 1;
+}
+.lista-projetos .text {
+  font-size: 13px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.pixel {
+  width: 100%;
+  height: 100%;
+}
 .space {
   width: 1%;
   display: inline-block;
@@ -188,12 +676,169 @@ JQUERY UI START
 /**********************************************************************************************
 JQUERY UI END
 */
+@media (max-width: 981px) {
+  .navbar-secondary {
+    width: 100%;
+    float: none !important;
+    padding: 0;
+    margin: 0 0 15px;
+    clear: both;
+    text-align: center;
+  }
+  .navbar-secondary > li {
+    float: none;
+    display: inline-block;
+  }
+  .map-footer {
+    font-size: 14px;
+  }
+  .map-footer > li a {
+    padding: 26px 15px;
+  }
+  .lista-agenda .date .day {
+    font-size: 32px;
+  }
+  .lista-agenda .title {
+    font-size: 12px;
+  }
+  .box-banner .title {
+    font-size: 18px;
+  }
+  .box-noticias .title {
+    font-size: 16px;
+  }
+  .lista-projetos .title {
+    font-size: 16px;
+  }
+}
 @media (max-width: 767px) {
-  /*    .site-geral:before {content:"TABLET";}*/
+  .extra-header .site-header .navbar-form {
+    text-align: center;
+    margin: 0;
+  }
+  .extra-header .site-header .navbar-form * {
+    vertical-align: middle;
+  }
+  .extra-header .site-header .navbar-form .form-group {
+    display: inline-block;
+  }
+  .extra-header .site-header .line-2 {
+    height: auto;
+  }
+  .extra-header .site-header .line-2 .navbar-nav {
+    margin-bottom: 0;
+  }
+  .extra-header .site-header .line-2 .navbar-nav > li a {
+    height: auto;
+  }
+  .extra-header .site-header .line-2 .navbar-nav + .navbar-nav {
+    margin-top: 0;
+  }
+  .extra-header .site-header .line-2 .navbar-nav:last-child {
+    margin-bottom: 15px;
+  }
+  .extra-header .site-header .agenda-cultural a {
+    background: none;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .extra-header .site-header .agenda-cultural a .icone {
+    display: none;
+  }
+  .extra-header .site-header .site-name .name-1 {
+    font-size: 12px;
+  }
+  .extra-header .site-header .site-name .name-2 {
+    font-size: 22px;
+  }
+  .map-footer {
+    display: none;
+  }
+  .site-atendimento {
+    text-align: center;
+  }
+  .media-atendimento .pull-left {
+    float: none !important;
+    display: inline-block;
+  }
+  .media-atendimento .media-body {
+    display: inline-block;
+    width: auto;
+  }
+  .site-footer .direitos-left,
+  .site-footer .direitos-right {
+    text-align: center;
+  }
+  .menu-footer > li {
+    display: block;
+    text-align: center;
+    max-width: none;
+  }
+  .menu-footer > li + li {
+    margin: 30px 0 0;
+  }
+  .box-banner .box-content,
+  .box-banner .cycle-slideshow,
+  .box-banner .cycle-slideshow li,
+  .box-banner .content,
+  .box-banner .imagem {
+    height: auto;
+  }
+  .box-banner .text {
+    position: relative;
+  }
+  .box-banner .title {
+    font-size: 16px;
+  }
+  .box-noticias {
+    border-bottom: 1px solid #ececec;
+    margin: 0 0 30px;
+  }
+  .box-noticias .content {
+    height: auto;
+  }
+  .box-noticias .noticia + .noticia {
+    border-left: 0;
+  }
+  .box-agenda .box-content {
+    margin-left: 0;
+  }
+  .lista-agenda .title {
+    font-size: 16px;
+  }
 }
 @media (max-width: 480px) {
-  /*#GERAL:before {content:"MOBILE";}*/
+  .box-banner .title {
+    font-size: 12px;
+  }
+  .cycle-espacos {
+    padding: 0;
+  }
+  .cycle-espacos .cycle-prev {
+    left: -5px;
+  }
+  .cycle-espacos .cycle-next {
+    right: -5px;
+  }
 }
-@media (min-width: 981px) and (max-width: 1200px) {
-  /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+@media (min-width: 768px) and (max-width: 980px) {
+  .extra-header .site-header .line-2 .navbar-right {
+    margin-right: 0;
+  }
+  .extra-header .site-header .line-2 .navbar-nav > li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .extra-header .site-header .collapse {
+    padding: 0;
+  }
+}
+@media (min-width: 981px) {
+  .extra-header .site-header .line-2 .navbar-right {
+    margin-right: 0;
+  }
+  .extra-header .site-header .collapse {
+    padding: 0;
+  }
 }
